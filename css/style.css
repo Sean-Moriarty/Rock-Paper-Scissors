@@ -1,5 +1,22 @@
+body {
+    background-color: #faf1e6;
+}
+
+
+ul {
+    list-style: none;
+    background-color: #064420;
+}
+
 li {
-    font-size: large;
-    color: black;
-    
+    font-size: xx-large;
+    color: #e4efe7;
+    display: inline;
+}
+
+footer {
+    background-color: #fdfaf6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: #064420;
 }
