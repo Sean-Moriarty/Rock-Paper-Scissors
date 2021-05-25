@@ -2,17 +2,24 @@ body {
     background-color: #faf1e6;
 }
 
-
-ul {
-    list-style: none;
+.container {
     background-color: #064420;
+    margin-top: 2em;
+    padding: 1em;
+    width: 50%;
+    border-radius: 15px;
 }
 
-li {
-    font-size: xx-large;
-    padding: 2em;
+.col {
+    font-size: 5em;
     color: #e4efe7;
-    display: inline;
+    margin: 0.5em;
+    border-radius: 25px;
+}
+
+.col:hover {
+    background-color: #e4efe7;
+    color: #064420;
 }
 
 footer {
