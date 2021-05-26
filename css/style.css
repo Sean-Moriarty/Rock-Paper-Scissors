@@ -14,12 +14,18 @@ body {
     font-size: 5em;
     color: #e4efe7;
     margin: 0.5em;
-    border-radius: 25px;
 }
 
-.col:hover {
+button {
     background-color: #e4efe7;
     color: #064420;
+    height: 200px;
+    width: 200px;
+    border-radius: 1000px;
+}
+
+button:hover {
+    background-color: #faf1e6;
 }
 
 footer {
