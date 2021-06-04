@@ -13,7 +13,18 @@ scissorsBtn.onclick = () => {
 
 
 function playerChoice(choice) {
-    console.log(choice);
+    playerHand = choice;
+    computerHand = computerChoice();
+    playGame(playerHand, computerHand);
 }
 
+function computerChoice() {
+    computerChoices = ["rock", "paper", "scissors"];
+    choiceIdx = Math.floor(Math.random() * 3);
+    return computerChoices[choiceIdx];
+}
 
+function playGame(playerHand, computerHand) {
+    console.log("Player: " + playerHand);
+    console.log("Computer: " + computerHand);
+}
