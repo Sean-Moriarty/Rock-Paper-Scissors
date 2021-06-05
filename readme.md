@@ -2,4 +2,7 @@
 Simple, browser based game of rock, paper, scissors.
 
 ## Description
-This will *eventually* be a single page app utilizing HTML, CSS (possibly Bootstrap), and JavaScript.  The icons for rock, paper, and scissors are from [Font Awesome](https://fontawesome.com).  This is very much a work in progress at the moment.
+Extremely simple web app where you can play rock, paper, scissors as long as you would like.  Click your choice and see if you win.
+
+## How it Works
+This very minimal web app that is primarily styled using [Bootstrap 4.0.0](https://getbootstrap.com/) with slight tweaking in the styling, utilizing [Font Awesome 5.15.3](https://fontawesome.com) for the hand icons, and vanilla JavaScript handling the game logic.

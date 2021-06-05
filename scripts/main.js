@@ -1,6 +1,7 @@
-const ROCK = "rock";
-const PAPER = "paper";
-const SCISSORS = "scissors";
+const ROCK = '<i class="fas fa-hand-rock"></i>';
+const PAPER = '<i class="fas fa-hand-paper"></i>';
+const SCISSORS = '<i class="fas fa-hand-scissors"></i>';
+
 
 rockBtn.onclick = () => {
     playerChoice(ROCK);
@@ -11,7 +12,6 @@ paperBtn.onclick = () => {
 scissorsBtn.onclick = () => {
     playerChoice(SCISSORS);
 };
-
 
 
 function playerChoice(choice) {
@@ -28,7 +28,35 @@ function computerChoice() {
 }
 
 function playGame(playerHand, computerHand) {
-    // display player and computer choices in bootstrap modal
-    document.getElementById("outcome-header").innerHTML = "This will show the winner!";
+    var outcome = getWinner(playerHand, computerHand);
+    var display = "";
+
+    if (outcome === null) {
+        display = "It was a draw...";
+    } else if (outcome === true) {
+        display = "You win!!!";
+    } else if (outcome === false) {
+        display = "You lose.";
+    }
+    document.getElementById("outcome-header").innerHTML = display;
     document.getElementById("outcome-body").innerHTML = "Player: " + playerHand + " <br> Computer: " + computerHand;
+}
+
+function getWinner(playerHand, computerHand) {
+    if (playerHand === computerHand) {
+        return null;
+    } else if (playerHand === ROCK) {
+        if (computerHand === SCISSORS) {
+            return true;
+        }
+    } else if (playerHand === PAPER) {
+        if (computerHand === ROCK) {
+            return true;
+        }
+    } else if (playerHand === SCISSORS) {
+        if (computerHand === PAPER) {
+            return true;
+        }
+    }
+    return false;
 }
