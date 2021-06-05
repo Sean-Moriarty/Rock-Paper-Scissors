@@ -39,7 +39,7 @@ function playGame(playerHand, computerHand) {
         display = "You lose.";
     }
     document.getElementById("outcome-header").innerHTML = display;
-    document.getElementById("outcome-body").innerHTML = "Player: " + playerHand + " <br> Computer: " + computerHand;
+    document.getElementById("outcome-body").innerHTML = "You: " + playerHand + " <br> Computer: " + computerHand;
 }
 
 function getWinner(playerHand, computerHand) {
