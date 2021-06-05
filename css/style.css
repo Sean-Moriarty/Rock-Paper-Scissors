@@ -1,36 +1,25 @@
 body {
-    background-color: #faf1e6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    padding: 0.5em;
 }
 
 .container {
-    background-color: #064420;
-    margin-top: 2em;
-    padding: 1em;
     width: 50%;
-    border-radius: 15px;
+    padding: 1.5em;
 }
 
-.col {
-    font-size: 5em;
-    color: #e4efe7;
-    margin: 0.5em;
+.row {
+    background-color: aliceblue;
+    padding: 0.75em;
+    border-radius: 5px;
 }
 
-button {
-    background-color: #e4efe7;
-    color: #064420;
-    height: 200px;
-    width: 200px;
-    border-radius: 1000px;
+.btn {
+    font-size: xx-large;
+    width: 2em;
 }
 
-button:hover {
-    background-color: #faf1e6;
-}
-
-footer {
-    background-color: #fdfaf6;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-align: center;
-    color: #064420;
-}

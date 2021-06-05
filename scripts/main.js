@@ -1,13 +1,15 @@
-
+const ROCK = "rock";
+const PAPER = "paper";
+const SCISSORS = "scissors";
 
 rockBtn.onclick = () => {
-    playerChoice("rock");
+    playerChoice(ROCK);
 };
 paperBtn.onclick = () => {
-    playerChoice("paper");
+    playerChoice(PAPER);
 };
 scissorsBtn.onclick = () => {
-    playerChoice("scissors");
+    playerChoice(SCISSORS);
 };
 
 
@@ -20,13 +22,13 @@ function playerChoice(choice) {
 
 function computerChoice() {
     // randomly generate the NPC's choice using the Math library's random() and floor() methods
-    computerChoices = ["rock", "paper", "scissors"];
+    computerChoices = [ROCK, PAPER, SCISSORS];
     choiceIdx = Math.floor(Math.random() * 3);
     return computerChoices[choiceIdx];
 }
 
 function playGame(playerHand, computerHand) {
     // display player and computer choices in bootstrap modal
-    document.getElementById("outcome-header").innerHTML = "This will change at some point!";
+    document.getElementById("outcome-header").innerHTML = "This will show the winner!";
     document.getElementById("outcome-body").innerHTML = "Player: " + playerHand + " <br> Computer: " + computerHand;
 }
