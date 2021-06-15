@@ -1,5 +1,5 @@
 # Rock Paper Scissors
-Simple, browser based game of rock, paper, scissors.
+Simple, browser based game of rock, paper, scissors. Working project [here](https://sean-moriarty.github.io/Rock-Paper-Scissors/).
 
 
 
