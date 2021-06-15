@@ -1,7 +1,7 @@
 # Rock Paper Scissors
 Simple, browser based game of rock, paper, scissors. Working project [here](https://sean-moriarty.github.io/Rock-Paper-Scissors/).
 
-
+![screenshot of project](screenshot.png)
 
 ## Description
 Extremely simple web app where you can play rock, paper, scissors as long as you would like.  Click your choice and see if you win.
